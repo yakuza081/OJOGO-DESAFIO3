@@ -1,0 +1,306 @@
+:root {
+  --laranja: #f2890d;
+  --azul: #1180E6;
+  --cinza: #B0A3A3;
+  --preto: #000000;
+}
+* {
+  padding: o;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--laranja);
+}
+
+.container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+  border-radius: 20px;
+  padding: 49px 57px 65px 79px;
+}
+
+.quadrado-azul {
+  display: flex;
+  justify-content: center;
+}
+
+.quadrado-azul-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 258px;
+  height: 150px;
+  background: var(--azul);
+  border-radius: 20px;
+  position: absolute;
+  margin-top: -110px;
+}
+
+.quadrado-azul-2 h1 {
+  font-family: 'Squada One', cursive;
+  font-size: 70px;
+}
+
+.jogo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.jogo-perfil {
+  width: 45%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.jogo-perfil-dv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.jogo-perfil-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.jogo-perfil-input label {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+}
+
+.jogo-perfil input {
+  width: 100%;
+  height: 42px;
+  border: 3px solid var(--cinza);
+  border-radius: 5px;
+}
+
+.jogo-perfil select {
+  width: 100%;
+  height: 42px;
+  border: 3px solid var(--cinza);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.jogo-perfil-dv button {
+  align-self: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  width: 200px;
+  height: 42px;
+  border: 3px solid #000000;
+  border-radius: 20px;
+  background: #7c7f82;
+  color: #fff;
+  cursor: pointer;
+}
+
+.profile-button button:hover {
+  background: #034582;
+}
+
+.jogo hr {
+  background: var(--cinza);
+  height: 330px;
+  border: 3px solid var(--cinza);
+  border-radius: 5px;
+  margin-top: 60px;
+}
+
+.gameplay {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.gameplay-text {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameplay-text p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.125rem;
+}
+
+.gameplay-gap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.gameplay-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.gameplay-inputs label {
+  align-self: center;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+}
+
+.gameplay-inputs input {
+  align-self: center;
+  width: 90%;
+  height: 42px;
+  border: 3px solid #B0A3A3;
+  border-radius: 5px;
+}
+
+.game-comecar {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 18px;
+  width: 200px;
+  height: 42px;
+  border: 3px solid #000000;
+  border-radius: 20px;
+  background: var(--laranja);
+  color: #fff;
+  cursor: pointer;
+}
+
+.game-comecar:hover {
+  background: #995402;
+}
+
+.gameplay-resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameplay-resultado p {
+  font-size: 1.5625rem;
+}
+
+
+
+.acertou {
+  color: #04B51B;
+  font-size: 1.25rem;
+}
+
+.errou {
+  color: red;
+}
+
+@media (max-width: 834px) {
+  .gameplay-resultado {
+    width: 320px;
+  }
+
+  .gameplay-resultado p {
+    font-size: 1.25rem;
+  }
+}
+
+
+@media (max-width: 690px) {
+  body {
+    height: 1421px;
+  }
+
+  .container {
+    width: 320px;
+    height: 1190px;
+  }
+
+  .quadrado-azul {
+    margin-right: 20px;
+  }
+
+  .jogo {
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .jogo-perfil {
+    margin-right: 20px;
+    width: 300px;
+    height: 42px;
+  }
+
+  .jogo-perfil-dv {
+    gap: 60px;
+  }
+
+  .jogo-perfil-input {
+    gap: 20px;
+  }
+
+  .jogo-perfil-input label {
+    font-size: 0.875rem;
+  }
+
+  .jogo-perfil input {
+    width: 100%;
+  }
+
+  .jogo-perfil select {
+    width: 100%;
+  }
+
+  .jogo hr {
+    display: none;
+  }
+
+  .gameplay {
+    margin-bottom: 120px;
+    margin-right: 20px;
+    width: 300px;
+  }
+
+  .gameplay-text {
+    width: 300px;
+  }
+
+  .gameplay-text p {
+    font-size: 1.25rem;
+  }
+
+  .gameplay-gap {
+    gap: 60px;
+  }
+
+  .gameplay-inputs {
+    gap: 20px;
+  }
+
+  .gameplay-inputs label {
+    align-self: flex-start;
+    font-size: 0.875rem;
+  }
+
+  .gameplay input {
+    width: 100%;
+  }
+}
